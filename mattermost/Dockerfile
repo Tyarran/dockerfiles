@@ -13,3 +13,4 @@ CMD ["/docker-entry.sh"]
 
 RUN curl https://releases.mattermost.com/3.0.3/mattermost-team-3.0.3-linux-amd64.tar.gz | tar -xz
 
+RUN rm /mattermost/config/config.json
