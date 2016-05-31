@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y curl netcat && rm -rf /var/lib/apt/list
 
 RUN mkdir -p /mattermost/data
 
-COPY config.template.json /mattermost/config/config.json
+COPY config.template.json /
 COPY docker-entry.sh /
 
 RUN chmod +x /docker-entry.sh
