@@ -11,5 +11,5 @@ COPY docker-entry.sh /
 RUN chmod +x /docker-entry.sh
 CMD ["/docker-entry.sh"]
 
-RUN curl https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz | tar -xz
+RUN curl https://releases.mattermost.com/3.6.2/mattermost-3.6.2-linux-amd64.tar.gz | tar -xz
 RUN rm /mattermost/config/config.json
