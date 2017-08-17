@@ -5,6 +5,6 @@ RUN unzip "sonar-scanner-cli-$SONAR_SCANNER_VERSION.zip"
 RUN mkdir -p /data
 VOLUME /data
 WORKDIR /data
-ENV PATH "/sonar-scanner-cli-${SONAR_SCANNER_VERSION}/bin:${PATH}"
+ENV PATH "/sonar-scanner-$SONAR_SCANNER_VERSION/bin:$PATH"
 ENTRYPOINT ["sonar-scanner"]
 CMD ["--help"]
