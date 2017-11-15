@@ -11,5 +11,5 @@ COPY docker-entry.sh /
 RUN chmod +x /docker-entry.sh
 CMD ["/docker-entry.sh"]
 
-RUN curl https://releases.mattermost.com/4.1.0/mattermost-team-4.1.0-linux-amd64.tar.gz | tar -xz
+RUN curl https://releases.mattermost.com/4.3.2/mattermost-team-4.3.2-linux-amd64.tar.gz | tar -xz
 RUN rm /mattermost/config/config.json
